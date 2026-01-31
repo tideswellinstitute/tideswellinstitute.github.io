@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-working at the Institute | Tideswell</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Lora', serif; background-color: #fdfaf5; color: #2d3436; }
+        .stone-border { border: 1px solid #d1ccc0; }
+        .sepia-glow { filter: sepia(0.2) contrast(1.05); }
+    </style>
+    <script src="layout.js"></script>
+</head>
+<body class="scroll-smooth">
+
+    <div id="header-slot"></div>
+
+    <main class="py-16 px-4 max-w-6xl mx-auto">
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+            <div>
+                <span class="text-[#5d6d5e] uppercase tracking-[0.3em] text-xs">Work with Heritage</span>
+                <h2 class="text-5xl font-bold text-[#2d4a3e] mt-4 mb-6">A Quieter Way to Work</h2>
+                <p class="text-lg leading-relaxed text-slate-700 italic mb-6">
+                    Trade the isolation of the home office for the warmth of our Grade II listed reading room. Surrounded by original stone windows and centuries-old beams, it is the Peak District’s most atmospheric workspace.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#rates" class="bg-[#2d4a3e] text-white px-6 py-3 text-sm uppercase tracking-widest hover:bg-[#3d5a4e] transition">View Rates</a>
+                </div>
+            </div>
+            <div class="stone-border p-2 bg-white">
+                <img src="co-working1.jpg" alt="Interior of Tideswell Institute Co-working space" class="w-full h-auto sepia-glow">
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-20">
+            <div class="text-center p-6 border-r border-stone-200 last:border-0">
+                <h3 class="text-xl font-bold text-[#2d4a3e] mb-3">Modern Connectivity</h3>
+                <p class="text-sm text-slate-600">High-speed fiber Wi-Fi throughout the building ensures you stay connected, even behind our thick stone walls.</p>
+            </div>
+            <div class="text-center p-6 border-r border-stone-200 last:border-0">
+                <h3 class="text-xl font-bold text-[#2d4a3e] mb-3">Historic Focus</h3>
+                <p class="text-sm text-slate-600">A "Silence" policy in the main reading room provides the perfect environment for deep work and creative thinking.</p>
+            </div>
+            <div class="text-center p-6">
+                <h3 class="text-xl font-bold text-[#2d4a3e] mb-3">Village Amenities</h3>
+                <p class="text-sm text-slate-600">Enjoy on-site tea and coffee facilities, or take a short stroll to Tideswell's local bakeries and cafes for lunch.</p>
+            </div>
+        </div>
+
+        <section id="rates" class="bg-white border border-stone-200 p-8 md:p-12 mb-20 shadow-sm">
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-bold text-[#2d4a3e]">Membership & Rates</h3>
+                <p class="text-stone-500 italic mt-2 text-sm">Flexible options for residents and visitors alike.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="flex justify-between items-center border-b border-stone-100 py-4">
+                    <span class="font-bold text-[#2d4a3e]">Daily Drop-in</span>
+                    <span class="text-slate-600 tracking-widest">£10.00 / Day</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-stone-100 py-4">
+                    <span class="font-bold text-[#2d4a3e]">Weekly Pass</span>
+                    <span class="text-slate-600 tracking-widest">£40.00 / Week</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-stone-100 py-4">
+                    <span class="font-bold text-[#2d4a3e]">Monthly Resident</span>
+                    <span class="text-slate-600 tracking-widest">£120.00 / Month</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-stone-100 py-4">
+                    <span class="font-bold text-[#2d4a3e]">Student Rate</span>
+                    <span class="text-slate-600 tracking-widest">£5.00 / Day</span>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-xs uppercase tracking-[0.2em] text-[#5d6d5e] mb-4">Ready to reserve a desk?</p>
+                <a href="booking.html" class="inline-block border border-[#2d4a3e] px-10 py-3 text-xs font-bold uppercase tracking-widest hover:bg-[#2d4a3e] hover:text-white transition duration-500">Check Availability</a>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-slot"></div>
+
+</body>
+</html>
