@@ -9,29 +9,13 @@
     <style>
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
         body { font-family: 'Lora', serif; background-color: #fdfaf5; color: #2d3436; }
-        .hero-overlay { background: rgba(45, 52, 54, 0.4); }
         .stone-border { border: 1px solid #d1ccc0; }
-        /* Decorative flourish style */
-        .flourish { font-size: 24px; color: #4a5d4e; margin-top: 10px; }
     </style>
+    <script src="layout.js"></script>
 </head>
 <body class="scroll-smooth">
 
-<nav class="w-full py-8 border-b border-stone-200 bg-[#fdfaf5]">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-        <h1 class="text-4xl font-bold tracking-tight text-[#2d4a3e] mb-2 uppercase tracking-widest">Tideswell Village Institute</h1>
-        <div class="h-px w-32 bg-[#2d4a3e] mx-auto mb-4"></div>
-        <div class="flex flex-wrap justify-center gap-6 md:gap-10 text-xs uppercase tracking-widest font-semibold text-[#5d6d5e]">
-            <a href="index.html" class="hover:text-[#2d4a3e] border-b border-transparent hover:border-[#2d4a3e] transition">Home</a>
-            <a href="weddings.html" class="hover:text-[#2d4a3e] border-b border-transparent hover:border-[#2d4a3e] transition">Weddings</a>
-            <a href="co-working.html" class="hover:text-[#2d4a3e] border-b border-transparent hover:border-[#2d4a3e] transition">Co-Working</a>
-            <a href="booking.html" class="hover:text-[#2d4a3e] border-b border-transparent hover:border-[#2d4a3e] transition">Booking Enquiry</a>
-            <a href="about.html" class="hover:text-[#2d4a3e] border-b border-transparent hover:border-[#2d4a3e] transition">About Us</a>
-            <a href="history.html" class="hover:text-[#2d4a3e] border-b border-transparent hover:border-[#2d4a3e] transition">History</a>
-            <a href="find-us.html" class="hover:text-[#2d4a3e] border-b border-transparent hover:border-[#2d4a3e] transition">Find Us</a>
-        </div>
-    </div>
-</nav>
+    <div id="header-slot"></div>
 
     <header class="relative py-24 px-4 border-b border-stone-200 text-center">
         <div class="max-w-4xl mx-auto">
@@ -45,76 +29,8 @@
     </header>
 
     <section id="services" class="py-20 max-w-6xl mx-auto px-4">
-        <div class="grid md:grid-cols-3 gap-12">
-            
-            <div class="text-center">
-                <div class="mb-6 h-64 overflow-hidden stone-border p-2 bg-white">
-                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd058a548?auto=format&fit=crop&q=80&w=800" alt="Hall" class="w-full h-full object-cover grayscale-[20%]">
-                </div>
-                <h3 class="text-2xl font-bold text-[#2d4a3e] mb-3">Hall Rental</h3>
-                <p class="text-sm leading-loose text-slate-600 mb-4">A grand space with high ceilings and original features, suitable for community events, markets, and gatherings of all kinds.</p>
-                <div class="text-[#2d4a3e] text-xs uppercase tracking-widest font-bold">From £[Price] per hour</div>
-            </div>
-
-            <div class="text-center">
-                <div class="mb-6 h-64 overflow-hidden stone-border p-2 bg-white">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Co-working" class="w-full h-full object-cover grayscale-[20%]">
-                </div>
-                <h3 class="text-2xl font-bold text-[#2d4a3e] mb-3">Co-working Space</h3>
-                <p class="text-sm leading-loose text-slate-600 mb-4">Modern connectivity meets historic tranquility. Our dedicated desks offer a peaceful alternative for the local professional.</p>
-                <div class="text-[#2d4a3e] text-xs uppercase tracking-widest font-bold">Daily & Weekly Rates</div>
-            </div>
-
-            <div class="text-center">
-                <div class="mb-6 h-64 overflow-hidden stone-border p-2 bg-white">
-                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=800" alt="Wedding" class="w-full h-full object-cover grayscale-[20%]">
-                </div>
-                <h3 class="text-2xl font-bold text-[#2d4a3e] mb-3">Boutique Weddings</h3>
-                <p class="text-sm leading-loose text-slate-600 mb-4">An intimate and romantic setting for your special day. A blank canvas awaiting your unique story in the heart of the Peaks.</p>
-                <div class="text-[#2d4a3e] text-xs uppercase tracking-widest font-bold">Full Weekend Hire Available</div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="booking" class="bg-[#2d4a3e] py-20 text-[#fdfaf5]">
-        <div class="max-w-3xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl mb-4">Secure Your Date</h2>
-                <p class="italic text-stone-300">Please address your inquiry to the Institute Secretary using the form below.</p>
-            </div>
-            
-            <form class="space-y-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="flex flex-col">
-                        <label class="text-xs uppercase tracking-widest mb-2 opacity-80">Full Name</label>
-                        <input type="text" class="bg-transparent border-b border-stone-500 py-2 focus:border-white outline-none transition">
-                    </div>
-                    <div class="flex flex-col">
-                        <label class="text-xs uppercase tracking-widest mb-2 opacity-80">Nature of Inquiry</label>
-                        <select class="bg-transparent border-b border-stone-500 py-2 focus:border-white outline-none transition appearance-none cursor-pointer">
-                            <option class="text-black">General Hall Rental</option>
-                            <option class="text-black">Co-working Membership</option>
-                            <option class="text-black">Wedding Celebration</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <label class="text-xs uppercase tracking-widest mb-2 opacity-80">Your Message</label>
-                    <textarea rows="4" class="bg-transparent border-b border-stone-500 py-2 focus:border-white outline-none transition resize-none"></textarea>
-                </div>
-                <div class="text-center pt-6">
-                    <button class="border border-stone-300 px-12 py-3 uppercase tracking-[0.2em] text-sm hover:bg-[#fdfaf5] hover:text-[#2d4a3e] transition duration-500">
-                        Submit Inquiry
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <footer class="py-12 text-center text-[#5d6d5e] text-sm tracking-widest uppercase">
-        <p>&copy; Tideswell Village Institute &middot; Derbyshire &middot; Est. 1872</p>
-    </footer>
+        </section>
+    <div id="footer-slot"></div>
 
 </body>
 </html>
