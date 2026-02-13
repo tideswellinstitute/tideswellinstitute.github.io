@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-working at the Institute | Tideswell</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Lora', serif; background-color: #fdfaf5; color: #2d3436; }
+        .stone-border { border: 1px solid #d1ccc0; }
+        .sepia-glow { filter: sepia(0.2) contrast(1.05); }
+        /* Custom styling for the date and select inputs to match the minimalist aesthetic */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: opacity(0.5);
+        }
+    </style>
+    <script src="layout.js"></script>
+</head>
+<body class="scroll-smooth">
+
+    <div id="header-slot"></div>
+
+    <main class="py-16 px-4 max-w-6xl mx-auto">
+        
+        <div class="flex flex-col lg:flex-row gap-16 items-start mb-24">
+            <div class="lg:w-1/2 pt-4">
+                <span class="text-[#5d6d5e] uppercase tracking-[0.4em] text-[10px] font-bold mb-4 block">Work with Heritage</span>
+                <h2 class="text-5xl md:text-6xl font-bold text-[#2d4a3e] leading-tight mb-8">A Quieter Way <br>to Work</h2>
+                <div class="h-px w-24 bg-[#d1ccc0] mb-8"></div>
+                <p class="text-xl leading-relaxed text-slate-700 italic mb-10">
+                    Trade the isolation of the home office for the warmth of our Grade II listed reading room. Surrounded by original stone windows and centuries-old beams, it is the Peak District’s most atmospheric workspace.
+                </p>
+                <a href="#contact" class="inline-block border border-[#2d4a3e] px-10 py-4 text-xs font-bold uppercase tracking-widest hover:bg-[#2d4a3e] hover:text-white transition duration-500">
+                    Inquire About Membership
+                </a>
+            </div>
+
+            <div class="lg:w-1/2 relative">
+                <div class="absolute -top-4 -left-4 w-16 h-16 border-t border-l border-[#d1ccc0]"></div>
+                <div class="absolute -bottom-4 -right-4 w-16 h-16 border-b border-r border-[#d1ccc0]"></div>
+                
+                <div class="stone-border p-3 bg-white shadow-xl rotate-1">
+                    <img src="images/co-working1.jpg" alt="Interior of Tideswell Institute" class="w-full h-auto grayscale-[10%] contrast-[1.1]">
+                    <p class="text-[10px] uppercase tracking-widest text-center mt-4 text-stone-400 font-semibold">
+                        The Main Reading Room &bull; Established 1872
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-24">
+            <div class="text-center p-6 border-r border-stone-200 last:border-0">
+                <h3 class="text-xl font-bold text-[#2d4a3e] mb-3">Modern Connectivity</h3>
+                <p class="text-sm text-slate-600">High-speed fiber Wi-Fi throughout the building ensures you stay connected, even behind our thick stone walls.</p>
+            </div>
+            <div class="text-center p-6 border-r border-stone-200 last:border-0">
+                <h3 class="text-xl font-bold text-[#2d4a3e] mb-3">Historic Focus</h3>
+                <p class="text-sm text-slate-600">A "Silence" policy in the main reading room provides the perfect environment for deep work and creative thinking.</p>
+            </div>
+            <div class="text-center p-6">
+                <h3 class="text-xl font-bold text-[#2d4a3e] mb-3">Village Amenities</h3>
+                <p class="text-sm text-slate-600">Enjoy on-site tea and coffee facilities, or take a short stroll to Tideswell's local bakeries and cafes for lunch.</p>
+            </div>
+        </div>
+
+        <section id="rates" class="bg-white border border-stone-200 p-8 md:p-12 mb-24 shadow-sm">
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-bold text-[#2d4a3e]">Membership & Rates</h3>
+                <p class="text-stone-500 italic mt-2 text-sm">Dedicated spaces for local professionals.</p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto space-y-4">
+                <div class="flex justify-between items-center border-b border-stone-100 py-4">
+                    <span class="font-bold text-[#2d4a3e]">Monthly Resident</span>
+                    <span class="text-slate-600 tracking-widest">£150.00 / Month</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-stone-100 py-4">
+                    <span class="font-bold text-[#2d4a3e]">Weekly Pass</span>
+                    <span class="text-slate-600 tracking-widest">£45.00 / Week</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="max-w-4xl mx-auto mb-24">
+            <div class="stone-border bg-white p-8 md:p-16 shadow-sm relative">
+                <div class="absolute -top-2 -left-2 w-8 h-8 border-t border-l border-[#d1ccc0]"></div>
+                <div class="absolute -bottom-2 -right-2 w-8 h-8 border-b border-r border-[#d1ccc0]"></div>
+
+                <div class="text-center mb-12">
+                    <span class="text-[#5d6d5e] uppercase tracking-[0.4em] text-[10px] font-bold mb-2 block">Inquiry Form</span>
+                    <h2 class="text-4xl font-bold text-[#2d4a3e]">Reserve Your Space</h2>
+                    <div class="h-px w-16 bg-[#d1ccc0] mx-auto mt-6"></div>
+                </div>
+
+                <form action="#" method="POST" class="space-y-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="flex flex-col">
+                            <label for="name" class="text-[10px] uppercase tracking-widest text-stone-500 font-bold mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required 
+                                class="bg-[#fdfaf5] border-b border-stone-200 py-3 px-2 focus:outline-none focus:border-[#2d4a3e] transition-colors duration-300">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="email" class="text-[10px] uppercase tracking-widest text-stone-500 font-bold mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required 
+                                class="bg-[#fdfaf5] border-b border-stone-200 py-3 px-2 focus:outline-none focus:border-[#2d4a3e] transition-colors duration-300">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="flex flex-col relative">
+                            <label for="interest" class="text-[10px] uppercase tracking-widest text-stone-500 font-bold mb-2">Interest</label>
+                            <select id="interest" name="interest" 
+                                class="bg-[#fdfaf5] border-b border-stone-200 py-3 px-2 focus:outline-none focus:border-[#2d4a3e] transition-colors duration-300 appearance-none">
+                                <option value="monthly">Monthly Resident</option>
+                                <option value="weekly">Weekly Pass</option>
+                                <option value="tour">Request a Tour</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="date" class="text-[10px] uppercase tracking-widest text-stone-500 font-bold mb-2">Anticipated Start Date</label>
+                            <input type="date" id="date" name="date" 
+                                class="bg-[#fdfaf5] border-b border-stone-200 py-3 px-2 focus:outline-none focus:border-[#2d4a3e] transition-colors duration-300">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label for="message" class="text-[10px] uppercase tracking-widest text-stone-500 font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements..."
+                            class="bg-[#fdfaf5] border-b border-stone-200 py-3 px-2 focus:outline-none focus:border-[#2d4a3e] transition-colors duration-300 resize-none"></textarea>
+                    </div>
+
+                    <div class="text-center pt-6">
+                        <button type="submit" 
+                            class="inline-block border border-[#2d4a3e] bg-[#2d4a3e] text-white px-12 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-[#2d4a3e] transition duration-500 cursor-pointer">
+                            Send Inquiry
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-slot"></div>
+
+</body>
+</html>
