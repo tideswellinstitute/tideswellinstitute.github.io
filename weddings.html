@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weddings at the Institute | Tideswell</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Lora', serif; background-color: #fdfaf5; color: #2d3436; }
+        .stone-border { border: 1px solid #d1ccc0; }
+        .serif-italic { font-family: 'Playfair Display', serif; font-style: italic; }
+    </style>
+    <script src="layout.js"></script>
+</head>
+<body class="scroll-smooth">
+
+    <div id="header-slot"></div>
+
+    <main class="py-16 px-4 max-w-6xl mx-auto">
+        
+        <div class="text-center mb-24">
+            <span class="text-[#5d6d5e] uppercase tracking-[0.4em] text-[10px] font-bold mb-4 block">Historic Unions</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-[#2d4a3e] mb-8 leading-tight">An Intimate Place <br>to Say "I Do"</h1>
+            <p class="max-w-2xl mx-auto text-xl text-slate-700 italic">
+                From the timeless stone architecture to the soft light of the Peak District, the Institute offers a soulful backdrop for smaller, meaningful celebrations.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-16 items-center mb-32">
+            <div class="relative">
+                <div class="stone-border p-3 bg-white shadow-2xl -rotate-2">
+                    <img src="images/wedding-interior.jpg" alt="Wedding setup in the reading room" class="w-full h-auto sepia-glow">
+                </div>
+                <div class="absolute -bottom-6 -right-6 w-32 h-32 border-b border-r border-[#d1ccc0] hidden md:block"></div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-[#2d4a3e] mb-6">The Reading Room</h2>
+                <div class="h-px w-16 bg-[#d1ccc0] mb-8"></div>
+                <p class="text-slate-700 leading-relaxed mb-6">
+                    Our main hall, with its vaulted timber ceiling and arched windows, provides a sacred atmosphere for ceremonies of up to 50 guests. The acoustics of the Victorian stonework are perfect for acoustic musicians or intimate vows.
+                </p>
+                <p class="text-slate-700 leading-relaxed">
+                    As the sun sets over the village, the room is bathed in a warm, golden hue, requiring very little decoration to feel complete.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-16 items-center mb-32">
+            <div class="order-2 md:order-1">
+                <h2 class="text-3xl font-bold text-[#2d4a3e] mb-6">The Secret Garden</h2>
+                <div class="h-px w-16 bg-[#d1ccc0] mb-8"></div>
+                <p class="text-slate-700 leading-relaxed mb-6">
+                    Hidden behind the Institute lies our private walled garden. It is an ideal space for champagne receptions or outdoor photography, with views of the 'Cathedral of the Peak' rising just beyond the stone walls.
+                </p>
+                <div class="bg-white border-l-4 border-[#2d4a3e] p-6 italic text-sm text-stone-600">
+                    "The garden felt like a private sanctuary in the middle of the village. Our photos with the church in the background are breathtaking."
+                </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <div class="stone-border p-3 bg-white shadow-2xl rotate-2">
+                    <img src="images/wedding-garden.jpg" alt="The Institute Gardens" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+
+        <section class="bg-[#2d4a3e] text-white p-12 md:p-20 mb-32 relative overflow-hidden">
+            <div class="relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Celebration Packages</h2>
+                    <p class="text-[#a8b5a9] italic">Tailored for simplicity and elegance.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                    <div class="border border-[#a8b5a9]/30 p-8 hover:bg-[#36574a] transition-colors">
+                        <h3 class="serif-italic text-2xl mb-4">The Twilight Ceremony</h3>
+                        <p class="text-sm text-stone-300 mb-6">Exclusive use of the Reading Room for 4 hours, seating for 50, and a prosecco toast in the garden.</p>
+                        <span class="text-xl font-bold tracking-widest">From £850</span>
+                    </div>
+
+                    <div class="border border-[#a8b5a9]/30 p-8 hover:bg-[#36574a] transition-colors">
+                        <h3 class="serif-italic text-2xl mb-4">The Heritage Day</h3>
+                        <p class="text-sm text-stone-300 mb-6">Full day hire of the building and grounds. Includes bridal prep room, ceremony, and evening reception space.</p>
+                        <span class="text-xl font-bold tracking-widest">From £1,800</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center bg-white stone-border p-16 shadow-sm">
+            <h2 class="text-3xl font-bold text-[#2d4a3e] mb-6">Download Our Wedding Brochure</h2>
+            <p class="text-slate-600 mb-10 max-w-xl mx-auto">
+                For detailed floor plans, local catering recommendations, and available dates for 2026/2027, please request our digital brochure.
+            </p>
+            <a href="contact.html" class="inline-block border border-[#2d4a3e] px-12 py-4 text-xs font-bold uppercase tracking-widest hover:bg-[#2d4a3e] hover:text-white transition duration-500">
+                Inquire About Your Date
+            </a>
+        </div>
+
+    </main>
+
+    <div id="footer-slot"></div>
+
+</body>
+</html>
