@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Tideswell Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Lora', serif; background-color: #fdfaf5; color: #2d3436; }
+        .stone-border { border: 1px solid #d1ccc0; }
+        .sepia-glow { filter: sepia(0.2) contrast(1.05); }
+    </style>
+    <script src="layout.js"></script>
+</head>
+<body class="scroll-smooth">
+
+    <div id="header-slot"></div>
+
+    <main class="py-16 px-4 max-w-6xl mx-auto">
+        
+        <div class="max-w-3xl mb-24">
+            <span class="text-[#5d6d5e] uppercase tracking-[0.4em] text-[10px] font-bold mb-4 block">Est. 1872</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-[#2d4a3e] leading-tight mb-8">A Legacy of Learning</h1>
+            <p class="text-xl leading-relaxed text-slate-700 italic">
+                The Tideswell Institute was built to provide the village with a space for mental improvement and social connection. Today, we carry that mission forward into the digital age.
+            </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-20 items-center mb-32">
+            <div class="lg:w-1/2 order-2 lg:order-1">
+                <div class="relative">
+                    <div class="absolute -top-4 -right-4 w-24 h-24 border-t border-r border-[#d1ccc0]"></div>
+                    <div class="stone-border p-3 bg-white shadow-xl -rotate-1">
+                        <img src="images/history-archive.jpg" alt="Vintage Tideswell" class="w-full h-auto grayscale">
+                        <p class="text-[10px] uppercase tracking-widest text-center mt-4 text-stone-400 font-semibold">
+                            Tideswell High Street, circa 1900
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 order-1 lg:order-2">
+                <h2 class="text-3xl font-bold text-[#2d4a3e] mb-6">Built for the People</h2>
+                <div class="h-px w-16 bg-[#d1ccc0] mb-8"></div>
+                <div class="space-y-6 text-slate-700 leading-relaxed">
+                    <p>
+                        Originally founded as a Reading Room and Library, the Institute served as the intellectual heart of Tideswell for generations. It was a place where local residents could access the day's news, share ideas, and escape the rigours of industrial life.
+                    </p>
+                    <p>
+                        Our Grade II listed building retains its original character—the vaulted ceilings, heavy oak doors, and the very same windows that looked out over the village square over 150 years ago.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center max-w-2xl mx-auto mb-32">
+            <div class="inline-block text-[#d1ccc0] text-6xl mb-4">“</div>
+            <p class="text-2xl font-serif italic text-[#2d4a3e] mb-6">
+                Our goal is to preserve the silence of the past while providing the speed of the future.
+            </p>
+            <div class="h-px w-12 bg-[#d1ccc0] mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-16 items-start mb-24">
+            <div>
+                <h3 class="text-2xl font-bold text-[#2d4a3e] mb-4">Preservation through Purpose</h3>
+                <p class="text-slate-600 mb-6">
+                    We believe the best way to save historic buildings is to make them useful. By transforming the Institute into a modern co-working space, we ensure the building remains heated, maintained, and vibrant for another century.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-4">
+                        <span class="text-[#5d6d5e] font-bold">01.</span>
+                        <p class="text-sm italic">Community-focused ownership and management.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-[#5d6d5e] font-bold">02.</span>
+                        <p class="text-sm italic">Sustainably maintained using traditional masonry techniques.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-[#5d6d5e] font-bold">03.</span>
+                        <p class="text-sm italic">Supporting local businesses and remote workers in the Peak District.</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="stone-border p-8 bg-[#2d4a3e] text-white">
+                <h3 class="text-2xl font-bold mb-6">Visit Us</h3>
+                <p class="text-stone-300 text-sm mb-8 leading-relaxed">
+                    Located in the heart of Tideswell, we are open to visitors and prospective members by appointment. Come experience the atmosphere for yourself.
+                </p>
+                <div class="space-y-2 text-sm">
+                    <p><strong>The Institute</strong></p>
+                    <p>High Street, Tideswell</p>
+                    <p>Derbyshire, SK17 8NE</p>
+                </div>
+                <a href="contact.html" class="mt-8 inline-block border border-white px-8 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-[#2d4a3e] transition duration-500">
+                    Get Directions
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="footer-slot"></div>
+
+</body>
+</html>
