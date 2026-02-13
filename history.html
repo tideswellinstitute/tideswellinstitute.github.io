@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Archives | Tideswell Institute History</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Lora', serif; background-color: #fdfaf5; color: #2d3436; }
+        .stone-border { border: 1px solid #d1ccc0; }
+        .timeline-line { width: 1px; background-color: #d1ccc0; position: absolute; left: 50%; height: 100%; transform: translateX(-50%); }
+        @media (max-width: 768px) { .timeline-line { left: 20px; } }
+    </style>
+    <script src="layout.js"></script>
+</head>
+<body class="scroll-smooth">
+
+    <div id="header-slot"></div>
+
+    <header class="py-24 px-4 bg-[#2d4a3e] text-white text-center">
+        <span class="text-[#a8b5a9] uppercase tracking-[0.5em] text-[10px] font-bold mb-4 block">The Archives</span>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">A Century and a Half</h1>
+        <p class="max-w-2xl mx-auto text-stone-300 italic text-lg font-serif">
+            From Victorian philanthropy to a 21st-century hub for remote work.
+        </p>
+    </header>
+
+    <main class="py-20 px-4 max-w-5xl mx-auto">
+        
+        <div class="relative">
+            <div class="timeline-line hidden md:block"></div>
+
+            <div class="relative flex flex-col md:flex-row items-center justify-between mb-24">
+                <div class="md:w-5/12 order-2 md:order-1">
+                    <div class="stone-border bg-white p-8 shadow-sm">
+                        <span class="text-[#5d6d5e] font-bold tracking-tighter text-4xl block mb-2">1872</span>
+                        <h3 class="text-xl font-bold text-[#2d4a3e] mb-4">The Foundation</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Built during the peak of the Victorian era, the Institute was established by local benefactors to provide a "Reading Room and Library" for the working men and women of Tideswell. It was a beacon of self-improvement in the heart of the Peak District.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/12 flex justify-center z-10 mb-8 md:mb-0">
+                    <div class="w-4 h-4 rounded-full bg-[#2d4a3e] border-4 border-[#fdfaf5]"></div>
+                </div>
+                <div class="md:w-5/12 order-1 md:order-2 mb-8 md:mb-0">
+                    <img src="images/history-1872.jpg" alt="Original Plans" class="stone-border p-2 bg-white rotate-2 grayscale">
+                </div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row items-center justify-between mb-24">
+                <div class="md:w-5/12 mb-8 md:mb-0">
+                    <img src="images/history-social.jpg" alt="Village Social" class="stone-border p-2 bg-white -rotate-2 grayscale">
+                </div>
+                <div class="md:w-1/12 flex justify-center z-10 mb-8 md:mb-0">
+                    <div class="w-4 h-4 rounded-full bg-[#2d4a3e] border-4 border-[#fdfaf5]"></div>
+                </div>
+                <div class="md:w-5/12">
+                    <div class="stone-border bg-white p-8 shadow-sm">
+                        <span class="text-[#5d6d5e] font-bold tracking-tighter text-4xl block mb-2">1914</span>
+                        <h3 class="text-xl font-bold text-[#2d4a3e] mb-4">A Village Anchor</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Throughout the early 20th century, the building expanded its role, hosting everything from village meetings to billiards matches. During the Great War, it served as a vital news hub for families awaiting letters from the front.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row items-center justify-between mb-24">
+                <div class="md:w-5/12 order-2 md:order-1">
+                    <div class="stone-border bg-white p-8 shadow-sm">
+                        <span class="text-[#5d6d5e] font-bold tracking-tighter text-4xl block mb-2">1985</span>
+                        <h3 class="text-xl font-bold text-[#2d4a3e] mb-4">Grade II Listing</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Recognized for its architectural significance and its unique gritstone masonry, the building was officially granted Grade II listed status, ensuring its historic features—like the arched mullion windows—would be protected forever.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/12 flex justify-center z-10 mb-8 md:mb-0">
+                    <div class="w-4 h-4 rounded-full bg-[#2d4a3e] border-4 border-[#fdfaf5]"></div>
+                </div>
+                <div class="md:w-5/12 order-1 md:order-2 mb-8 md:mb-0">
+                    <div class="stone-border p-3 bg-white shadow-xl rotate-1">
+                        <div class="bg-stone-100 aspect-video flex items-center justify-center text-stone-400 italic text-xs">Architectural Detail Image</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-32 pt-16 border-t border-stone-200">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-[#2d4a3e] mb-6">Restoring the Stone</h2>
+                    <p class="text-slate-700 leading-relaxed mb-6">
+                        In recent years, the Institute has undergone a meticulous restoration. Using traditional lime mortar and reclaimed local stone, we have repaired the exterior to withstand another century of Peak District weather.
+                    </p>
+                    <p class="text-slate-700 leading-relaxed italic">
+                        "To touch these walls is to touch the hands of the masons who carved them in the 1870s."
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="stone-border p-1 bg-white shadow-md"><div class="bg-stone-200 aspect-square"></div></div>
+                    <div class="stone-border p-1 bg-white shadow-md mt-4"><div class="bg-stone-200 aspect-square"></div></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-slot"></div>
+
+</body>
+</html>
